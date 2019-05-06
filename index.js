@@ -44,10 +44,9 @@ module.exports = function (key, reducer, options, callback) {
     dat.joinNetwork()
   })
 
-  function handleUpdate(path) {
-    var cmdsStr = reducer(path)
-
-    cmds = cmdsStr.map((cmd) => ({ command: cmd, cwd: options.output }))
+  function handleUpdate (path) {
+    var cmds = reducer(path)
+    cmds = cmds.map((cmd) => ({ command: cmd, cwd: options.output }))
 
     nrc.run(cmds).then(function (exitCodes) {
       if (callback) callback(exitCodes)
@@ -55,6 +54,6 @@ module.exports = function (key, reducer, options, callback) {
   }
 }
 
-function cleanUrl(key) {
+function cleanUrl (key) {
   return key.replace('dat:', '').replace(/\//g, '')
 }

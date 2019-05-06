@@ -11,7 +11,7 @@ var argv = minimist(process.argv.slice(2), {
     'output': 'o'
   },
   default: {
-    'output': null,
+    'output': null
   },
   boolean: [
     'help',
