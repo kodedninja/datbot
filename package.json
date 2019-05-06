@@ -1,0 +1,25 @@
+{
+  "name": "datbot",
+  "version": "0.0.0",
+  "description": "Watch a Dat archive and run scripts on changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/kodedninja/datbot"
+  },
+  "author": "kodedninja",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "chokidar": "^3.0.0",
+    "dat-node": "^3.5.15",
+    "dedent": "^0.7.0",
+    "minimist": "^1.2.0",
+    "node-run-cmd": "^1.0.1"
+  }
+}
