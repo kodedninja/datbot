@@ -1,6 +1,6 @@
 {
   "name": "datbot",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Seed a DAT archive and trigger scripts on updates",
   "main": "index.js",
   "bin": "bin.js",
